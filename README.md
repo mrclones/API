@@ -6,16 +6,24 @@ This API content 2 entities - users and spaces. It requires authentication which
 ##Listen port
 8443
 ##Methods:
-###GET:
-    /users - show all users
-    /users/$user_name - show username, name, surname and age
-    /spaces - show all spaces
-    /spaces/$space_name - show name and id
+###GET
+####Show all users
+    /users
+####Show username, name, surname and age
+    /users/$user_name
+####Show all spaces
+    /spaces
+####Show name and id
+    /spaces/$space_name
     
-###POST:
+###POST
+####Create user
     /users -F "username=$user_name" -F "name=$name" -F "surname=$surname" -F "age=$age"
+####Create space
     /spaces -F "name=$name" -F "id=$id"
     
-###DELETE:
+###DELETE
+####Delete user
     /users/$user_name
+####Delete space
     /spaces/$space_name
