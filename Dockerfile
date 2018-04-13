@@ -1,5 +1,5 @@
 FROM ruby:latest
-MAINTAINER Marek Onderko <marek.onderko@t-systems.sk>
+MAINTAINER mr.clones <mr.clonesupa@gmail.com>
 
 # Set environment variable
 ENV APP_HOME /app
